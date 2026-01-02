@@ -21,4 +21,4 @@ brew install \
 brew install neovim --HEAD 
 
 # html & css LSP + formatting
-npm i -g vscode-langservers-extracted
+npm i -g vscode-langservers-extracted typescript typescript-language-server
