@@ -71,8 +71,8 @@
 #               an EOL character signifies the end of the bind.
 
 
-# Change "Terminal" to "Alacritty", "iTerm2", or "Kitty" if preferred
-fn - return : open -n -a ghostty
+# open terminal with fn + enter
+fn - 0x4C : open -n -a Ghostty
 
 # Reload skhd configuration
 cmd + fn - r : skhd --reload
