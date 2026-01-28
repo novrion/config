@@ -50,6 +50,8 @@ elif [ "$1" = "macos" ]; then
 	./scripts/install_macos.sh
 	cp -r ghostty "$HOME/.config/"
 	cp -r tmux "$HOME/.config/"
+	cp -r yabai "$HOME/.config/"
+	cp -r skhd "$HOME/.config/"
 	cp .zshrc "$HOME/.zshrc"
 
 	rm "$SCRIPTS/install_arch.sh"
