@@ -17,7 +17,9 @@ brew install \
 	rust-analyzer \
 	pylsp \
 	tree-sitter \
-	tree
+	tree \
+	koekeishiya/formulae/yabai \
+	koekeishiya/formulae/skhd
 brew install neovim --HEAD 
 
 # html & css LSP + formatting
