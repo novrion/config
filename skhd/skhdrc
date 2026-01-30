@@ -105,7 +105,8 @@ fn + shift - l : yabai -m window --swap east
 #  -- Window State --
 
 # Toggle Fullscreen (Monocle mode)
-fn - f : yabai -m window --toggle zoom-fullscreen
+fn - f : yabai -m window --toggle native-fullscreen
+fn - z : yabai -m window --toggle zoom-fullscreen
 
 # Toggle Float (Floating mode)
 fn - t : yabai -m window --toggle float
@@ -123,6 +124,10 @@ fn - y : yabai -m space --mirror y-axis
 fn - x : yabai -m space --mirror x-axis
 
 #  -- Spaces (Desktops) --
+
+# Set layout of the space (options: bsp, float)
+fn - o : yabai -m space --layout float
+fn - p : yabai -m space --layout bsp
 
 # Focus Space 1-9
 fn - 1 : yabai -m space --focus 1
