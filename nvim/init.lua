@@ -21,7 +21,7 @@ vim.pack.add({
 	{ src = "https://github.com/mikavilpas/yazi.nvim" },
 	{ src = "https://github.com/kdheepak/lazygit.nvim" },
 	{ src = "https://github.com/folke/tokyonight.nvim" },
-	{ src = "https://github.com/novrion/awb.nvim"},
+	{ src = "https://github.com/novrion/awb.nvim" },
 })
 
 require "oil".setup()
@@ -31,7 +31,16 @@ vim.keymap.set('n', '<leader>e', ':Oil<CR>')
 vim.keymap.set('n', '<leader>f', ':Yazi<CR>')
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>')
 
-vim.lsp.enable({ "lua_ls", "clangd", "pylsp", "bashls", "rust_analyzer", "html", "cssls", "ts_ls" })
+vim.lsp.enable({
+	"lua_ls",
+	"clangd",
+	"pylsp",
+	"bashls",
+	"rust_analyzer",
+	"html",
+	"cssls",
+	"ts_ls",
+	"jsonls"})
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.api.nvim_set_keymap('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>da', '<cmd>lua vim.diagnostic.setqflist()<CR>', { noremap = true, silent = true })
@@ -47,6 +56,6 @@ require("awb").setup({
 	model = "gemini-2.5-flash",
 	api_key = "",
 	keymaps = {
-		ask = { "<leader>a", { "n", "v" }}
+		ask = { "<leader>a", { "n", "v" } }
 	}
 })
