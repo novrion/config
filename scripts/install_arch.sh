@@ -14,7 +14,7 @@ makepkg -si
 
 yay -S neovim-nightly
 
-sudo pacman -Sy \
+sudo pacman -Syu --needed \
 	bspwm \
 	sxhkd \
 	ly \
@@ -37,9 +37,10 @@ sudo pacman -Sy \
 	python-pycodestyle \
 	rust_analyzer \
 	tree-sitter \
-	tree
+	tree \
+	typescript
 
 # html & css LSP + formatting
-sudo npm i -g vscode-langservers-extracted typescript typescript-language-server
+yay -S vscode-langservers-extracted typescript-language-server
 
 cd "$CURRENT_DIR"
