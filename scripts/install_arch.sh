@@ -35,7 +35,7 @@ sudo pacman -Syu --needed \
 	python-lsp-black \
 	python-pyflakes \
 	python-pycodestyle \
-	rust_analyzer \
+	rust-analyzer \
 	tree-sitter \
 	tree \
 	typescript
